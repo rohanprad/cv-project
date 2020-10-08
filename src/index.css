@@ -1,5 +1,10 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +12,114 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header{
+  background-color: cornflowerblue;
+  margin-bottom: 2em;
+  padding: 1em;
+  color: whitesmoke
+}
+
+.displayHeader{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container{
+  padding: 2em;
+  padding-top: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+form{
+  width: 50%;
+  border: solid 2px;
+  border-color: cornflowerblue;
+  padding: 1em;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: cornflowerblue;
+}
+
+@media (max-width: 576px){
+
+  .container{
+    padding: 0
+  }
+  form{
+    width: 100%;
+  }
+}
+
+input{
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+  padding: 0.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+.form-section-title:first-child{
+  margin-top: 0;
+}
+
+.form-section-title{
+  margin: 1em 0;
+}
+
+.form-submit{
+  display: block;
+  padding: 1em 5em;
+  color: whitesmoke;
+  background-color: cornflowerblue;
+  margin: 1em auto;
+  border: solid 2px;
+  border-color: cornflowerblue;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.form-submit:hover{
+  border: solid 2px;
+  border-color: cornflowerblue;
+  color: cornflowerblue;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.infoDiv{
+  border: solid 2px cornflowerblue;
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.infoDiv h2{
+  color: cornflowerblue;
+  margin-bottom: 1em;
+}
+
+.infoDiv p{
+  margin: 0.5em 0;
+  font-weight: 700;
+}
+
+.info{
+  color: cornflowerblue;
+  margin: 0 0.25em;
+}
+
+.edit-button-link{
+  text-decoration: none;
+}
+
+.edit-button{
+  font-size: 1.5rem;
+  color: whitesmoke;
 }
